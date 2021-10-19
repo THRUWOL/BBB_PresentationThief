@@ -10,10 +10,10 @@ pdfFileName = "file.pdf" # Имя будущего PDF файла
 
 n = 1
 try:
-    while (n < 100):
+    while (n < 5):
         # Указать ссылку на картинку. У меня картинка с "удоными" названиями, поэтому беру все циклом по имени
         url = f'https://webkim.online/presentation/9f30223aa5c65ac9ca033d82f2851be2cf38a6cc-1634619619386/presentation/b947139544c61d1367ce10265a5dc62a8be9855d-1634619866221/slide-{n}.png'
-        urllib.request.urlretrieve(url, f'{path}+{n}.png')
+        urllib.request.urlretrieve(url, f'{path}'+f'{n}.png')
         print(f'{n}.png download')
         n+=1
 except:
